@@ -100,7 +100,7 @@ m.sendMessage(args)
 
 
    client.on('message', message => {
-    if (message.content.startsWith("zbot")) {
+    if (message.content.startsWith("1bot")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
@@ -115,7 +115,7 @@ m.sendMessage(args)
             .addField('``My Name``' , `[ ${client.user.tag} ]` , true)
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
                   .addField('``My Prefix``' , `[z]` , true)
-                  .addField('``My Language``' , `[ Zine  ]` , true)
+                  .addField('``My Language``' , `[ Zine ]` , true)
                     })
 }
 });
